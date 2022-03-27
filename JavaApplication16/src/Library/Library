@@ -1,0 +1,38 @@
+create database library;
+
+create table book_list
+(
+Book_name varchar(100) not null,
+Writer1_name varchar(50),
+Writer2_name varchar(50),
+Amount int,
+Issued int
+);
+
+create table issued_list
+(
+Roll int not null,
+Book_name varchar(100) not null,
+Writer1_name varchar(50),
+Writer2_name varchar(50),
+Issued_date varchar(15)
+);
+
+create table delayed_list
+(
+Roll int not null,
+Book_name varchar(100) not null,
+Writer1_name varchar(50),
+Writer2_name varchar(50),
+Issued_date varchar(15)
+);
+
+create table login
+(
+Username varchar(100) not null,
+Password varchar(100) not null
+);
+
+insert into login
+(Username,Password)
+values('admin','admin');
